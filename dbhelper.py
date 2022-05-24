@@ -7,10 +7,10 @@
 import redis # 由于redis输出数据类型是bytes，所以连接配置提供decode_responses选项，可以选择直接输出str类型数据 
 redisdic={30:"ipDB",31:"statisticDB",32:"powDB",33:"sessionDB"}
 
-redis.ConnectionPool(host='localhost', port=6379, password='wfkycEzzxjl1',decode_responses=True)
+redis.ConnectionPool(host='localhost', port=6379, password='******',decode_responses=True)
 
 for key,value in redisdic.items():
-   exec(value+"""= redis.Redis(connection_pool=redis.ConnectionPool(host='localhost', port=6379, password='wfkycEzzxjl1',decode_responses=True,db="""+str(key)+"""))""")
+   exec(value+"""= redis.Redis(connection_pool=redis.ConnectionPool(host='localhost', port=6379, password='******',decode_responses=True,db="""+str(key)+"""))""")
 print("内存数据库启动完成")
 
 
