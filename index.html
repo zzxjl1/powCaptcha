@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify</title>
+     <link rel="stylesheet" type="text/css" href="/allCaptcha.css" />
+
+ </head>
+<body>
+    <button class="btn" id="verifybtn">点这开始验证</button>
+     <script src="/allCaptcha.js"></script>
+    <script>
+    document.getElementById("verifybtn").onclick=function(){
+    allCaptcha.show(
+    function(){
+    document.getElementById("verifybtn").innerHTML="验证成功";
+    document.getElementById("verifybtn").disabled = true;
+    });}
+    </script>
+</body>
+</html>
