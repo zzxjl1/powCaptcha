@@ -157,8 +157,4 @@ db = DiyMysql(host="localhost", port=3306, user="root",passwd="******", db="powC
 ##
 ##    # 5.删除name='彭敏'的那条数据
 ##    diycon.delete("delete from tb_xiejiangpeng where name='彭敏'")
-##--------------------- 
-##作者：Tester_xjp 
-##来源：CSDN 
-##原文：https://blog.csdn.net/tester_xjp/article/details/83514975 
-##版权声明：本文为博主原创文章，转载请附上博文链接！
+
