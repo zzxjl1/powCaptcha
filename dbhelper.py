@@ -91,7 +91,7 @@ class DiyMysql(object):
             self.cursor.execute(sqlquery)  # 影响的行数
         except Exception as abnormal:
             print("SQL有误，错误内容 %s" % abnormal)
-            self.condb = pymysql.connect("localhost",3306, "root","wfkycEzzxjl1", "main", "utf8")
+            self.condb = pymysql.connect("localhost",3306, "root","******", "main", "utf8")
             self.cursor = self.condb.cursor()
 
         if self.cursor.rowcount == 0:  # 0 则代表没有查询结果
@@ -139,7 +139,7 @@ class DiyMysql(object):
         print("mysql con完成析构")
 
 
-db = DiyMysql(host="localhost", port=3306, user="root",passwd="wfkycEzzxjl1", db="powCAPTCHA", charset="utf8")
+db = DiyMysql(host="localhost", port=3306, user="root",passwd="******", db="powCAPTCHA", charset="utf8")
 
 ##
 ##  # 1.新建一个名称为的表，字段为name,age,address,其中的value为字段说明
