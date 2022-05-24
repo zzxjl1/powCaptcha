@@ -141,20 +141,3 @@ class DiyMysql(object):
 
 db = DiyMysql(host="localhost", port=3306, user="root",passwd="******", db="powCAPTCHA", charset="utf8")
 
-##
-##  # 1.新建一个名称为的表，字段为name,age,address,其中的value为字段说明
-##    diycon.maketable(tablename="tb_xiejiangpeng", name="姓名", age="年龄", address="家庭住址")
-##
-##    # 2.在tb_xiejiangpeng表中 插入一条数据
-##    diycon.insertsqlone(tablename="tb_xiejiangpeng", name="谢江鹏", age="22", address="湖南长沙")
-##
-##    # 3.根据name=谢江鹏 查询刚才插入的数据
-##    queryresult = diycon.querysql("select * from tb_xiejiangpeng where name='谢江鹏'")
-##    print("查询到的结果为:", queryresult)
-##
-##    # 4.将id=1的那条数据 名称修改成"彭敏"
-##    diycon.update("update tb_xiejiangpeng set name='彭敏' where id ='1'")
-##
-##    # 5.删除name='彭敏'的那条数据
-##    diycon.delete("delete from tb_xiejiangpeng where name='彭敏'")
-
